@@ -2,6 +2,7 @@ import geocoder
 import requests
 import json
 import pyttsx3
+import pycountry
 
 g = geocoder.ip('me')
 
@@ -17,7 +18,7 @@ def speak(audio):
 
 def weather():
     api_url = "https://fcc-weather-api.glitch.me/api/current?lat=" + \
-        str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
+              str(g.latlng[0]) + "&lon=" + str(g.latlng[1])
 
     data = requests.get(api_url)
     data_json = data.json()
@@ -25,8 +26,12 @@ def weather():
         main = data_json['main']
         wind = data_json['wind']
         weather_desc = data_json['weather'][0]
-        speak(str(data_json['coord']['lat']) + 'latitude' + str(data_json['coord']['lon']) + 'longitude')
-        speak('Current location is ' + data_json['name'] + data_json['sys']['country'] + 'dia')
+        #   speak(str(data_json['coord']['lat']) + 'latitude' + str(data_json['coord']['lon']) + 'longitude')
+        print(data_json["sys"]["country"])
+        if data_json["sys"]["country"] == 'GB':
+            speak('Current location is ' + data_json['name'] + " " +
+                  pycountry.countries.get(alpha_2=f'{data_json["sys"]["country"]}').name)
+
         speak('weather type ' + weather_desc['main'])
         speak('Wind speed is ' + str(wind['speed']) + ' metre per second')
         speak('Temperature: ' + str(main['temp']) + 'degree celcius')
