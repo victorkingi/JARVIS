@@ -1,0 +1,1 @@
+@echo off && echo Loading... && activate deeplearning && cd D:\git\RandomSpotifySong && python randomsong.py --num-songs 100 -word && exit

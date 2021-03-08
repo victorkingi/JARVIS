@@ -1,0 +1,82 @@
+,album,track_number,id,name,uri,acousticness,danceability,energy,instrumentalness,liveness,loudness,speechiness,tempo,valence,popularity
+0,BADLANDS (Live From Webster Hall),1,6MO6DrfGiYWKOQKRi8TyT8,Castle - Live From Webster Hall,spotify:track:6MO6DrfGiYWKOQKRi8TyT8,0.0135,0.476,0.83,0.0,0.716,-7.517,0.055,130.016,0.246,41
+1,BADLANDS (Live From Webster Hall),2,6TuwZME8wPwey8E7vmGYrq,Hold Me Down - Live From Webster Hall,spotify:track:6TuwZME8wPwey8E7vmGYrq,0.133,0.248,0.684,3.05e-06,0.668,-6.755,0.0385,73.079,0.24,39
+2,BADLANDS (Live From Webster Hall),3,6WjeOpJIcApl0DvMLaCi0K,New Americana - Live From Webster Hall,spotify:track:6WjeOpJIcApl0DvMLaCi0K,0.00106,0.342,0.816,0.0,0.668,-6.097,0.044,87.094,0.163,41
+3,BADLANDS (Live From Webster Hall),4,5CTB9RpyTkntYOWeYXHDIu,Drive - Live From Webster Hall,spotify:track:5CTB9RpyTkntYOWeYXHDIu,0.00417,0.273,0.745,0.00448,0.955,-8.312,0.0704,114.055,0.145,38
+4,BADLANDS (Live From Webster Hall),5,1uB0SF9wNBOfyeMt7PF8BA,Hurricane - Live From Webster Hall,spotify:track:1uB0SF9wNBOfyeMt7PF8BA,0.00291,0.536,0.71,0.000613,0.62,-7.513,0.0318,119.983,0.249,38
+5,BADLANDS (Live From Webster Hall),6,0r0yp1OGfO4VOgUY6u3eV0,Roman Holiday - Live From Webster Hall,spotify:track:0r0yp1OGfO4VOgUY6u3eV0,0.0203,0.412,0.682,1.94e-05,0.697,-6.753,0.0423,149.092,0.343,38
+6,BADLANDS (Live From Webster Hall),7,4hLGqLXIGSsVoR3Sfl8LdW,Colors pt. II - Live From Webster Hall,spotify:track:4hLGqLXIGSsVoR3Sfl8LdW,0.00827,0.476,0.601,0.544,0.47,-9.085,0.0546,95.165,0.321,36
+7,BADLANDS (Live From Webster Hall),8,5UnGkyqyiEPFSeOoJBCysr,Colors - Live From Webster Hall,spotify:track:5UnGkyqyiEPFSeOoJBCysr,0.00242,0.437,0.813,0.0,0.962,-6.285,0.0365,100.011,0.334,39
+8,BADLANDS (Live From Webster Hall),9,7aGQFcdqBWoJ8fzOAWCjrJ,Tiny Little Babies - Talking Break - Live From Webster Hall,spotify:track:7aGQFcdqBWoJ8fzOAWCjrJ,0.877,0.362,0.442,0.0,0.966,-16.367,0.197,76.711,0.228,33
+9,BADLANDS (Live From Webster Hall),10,7a4ocCGtDLhbGauYgHNhKY,Strange Love - Live From Webster Hall,spotify:track:7a4ocCGtDLhbGauYgHNhKY,0.000741,0.206,0.804,1.28e-05,0.784,-6.691,0.0478,90.079,0.296,36
+10,BADLANDS (Live From Webster Hall),11,1W4sOKBqwzP65i2J4D9QQK,Forget Her And Find Her - Talking Break - Live From Webster Hall,spotify:track:1W4sOKBqwzP65i2J4D9QQK,0.786,0.491,0.458,0.0,0.944,-13.95,0.39,78.361,0.167,33
+11,BADLANDS (Live From Webster Hall),12,5nj502CTTN96K2PLDLMzMv,Coming Down - Live From Webster Hall,spotify:track:5nj502CTTN96K2PLDLMzMv,0.769,0.297,0.341,1.71e-05,0.225,-9.939,0.0285,87.14,0.161,37
+12,BADLANDS (Live From Webster Hall),13,0RwOyWjYfDjc9ZQbESCDU9,Haunting - Live From Webster Hall,spotify:track:0RwOyWjYfDjc9ZQbESCDU9,0.0163,0.207,0.669,0.00288,0.501,-7.326,0.0458,179.352,0.154,35
+13,BADLANDS (Live From Webster Hall),14,3AN7C8xslS6RMlYT046GoH,Control - Live From Webster Hall,spotify:track:3AN7C8xslS6RMlYT046GoH,0.1,0.475,0.682,0.0,0.902,-5.742,0.0303,120.085,0.153,37
+14,BADLANDS (Live From Webster Hall),15,1WI4TH5HwEcH8stJoc9a6w,Young God - Live From Webster Hall,spotify:track:1WI4TH5HwEcH8stJoc9a6w,0.0844,0.266,0.662,6.86e-05,0.988,-8.329,0.0473,119.978,0.192,37
+15,BADLANDS (Live From Webster Hall),16,5M3pspYqFfLgQq3Ioaf2y6,Trouble - Live From Webster Hall,spotify:track:5M3pspYqFfLgQq3Ioaf2y6,0.84,0.367,0.56,0.0,0.974,-8.668,0.0525,108.36,0.447,34
+16,BADLANDS (Live From Webster Hall),17,5IYV2olXf2vh4Pg7Ihlrwm,I’m Not Playing Closer - Talking Break - Live From Webster Hall,spotify:track:5IYV2olXf2vh4Pg7Ihlrwm,0.914,0.426,0.523,4.77e-05,0.969,-10.824,0.188,34.698,0.332,31
+17,BADLANDS (Live From Webster Hall),18,6uuQerSGQPi2YoNdfEEJwe,Ghost - Live From Webster Hall,spotify:track:6uuQerSGQPi2YoNdfEEJwe,0.0086,0.384,0.779,5.24e-05,0.792,-6.885,0.0426,95.028,0.163,34
+18,BADLANDS (Live From Webster Hall),19,3YJodNgpR0jCRk0IsYcF2K,Gasoline - Live From Webster Hall,spotify:track:3YJodNgpR0jCRk0IsYcF2K,0.0191,0.516,0.808,3.62e-05,0.971,-7.361,0.0429,119.945,0.142,36
+19,BADLANDS (Live From Webster Hall),20,4chG7ubW99IBBBEcPI0tgU,Some Kind Of Stardust - Talking Break - Live From Webster Hall,spotify:track:4chG7ubW99IBBBEcPI0tgU,0.838,0.401,0.552,2.37e-06,0.955,-12.39,0.264,121.786,0.32,30
+20,BADLANDS (Live From Webster Hall),21,4LS0ejvUw0rVj22DU13LCj,Is There Somewhere - Live From Webster Hall,spotify:track:4LS0ejvUw0rVj22DU13LCj,0.02,0.23,0.614,0.00187,0.935,-8.186,0.0501,129.972,0.193,35
+42,Manic,6,6CkLsvxAgLkhc6R5pqdMHu,Dominic's Interlude,spotify:track:6CkLsvxAgLkhc6R5pqdMHu,0.784,0.445,0.368,0.0,0.354,-6.31,0.0292,158.057,0.707,46
+47,Manic,11,7aRNvbY4VdkO7lJwlpIPkI,Alanis' Interlude,spotify:track:7aRNvbY4VdkO7lJwlpIPkI,0.0093,0.706,0.89,0.0,0.14,-4.356,0.0516,94.015,0.455,46
+53,Manic,1,6yiyyY81Vae0bRHGYPB1y1,wipe your tears,spotify:track:6yiyyY81Vae0bRHGYPB1y1,0.506,0.803,0.539,0.0,0.188,-6.197,0.0702,80.07,0.552,52
+54,Manic,2,6SL8U8TtdwOtGhbmGzsMfX,I'm Not Mad,spotify:track:6SL8U8TtdwOtGhbmGzsMfX,0.17,0.78,0.684,0.0,0.105,-5.758,0.0636,149.916,0.732,66
+55,Manic,3,0IAd3wUpWywdem1Fd96cOo,Be Kind,spotify:track:0IAd3wUpWywdem1Fd96cOo,0.00772,0.633,0.633,0.0,0.0523,-7.085,0.0442,94.015,0.452,52
+57,Manic,5,2031g1Fr1ZxIFSjonvuM1S,Without Me - ILLENIUM Remix,spotify:track:2031g1Fr1ZxIFSjonvuM1S,0.493,0.638,0.659,3.01e-06,0.217,-4.954,0.0479,136.004,0.371,46
+58,Manic,6,6iwMgc34qGH8vDBcyQ8nP9,Graveyard - Acoustic,spotify:track:6iwMgc34qGH8vDBcyQ8nP9,0.816,0.497,0.419,0.0,0.212,-6.176,0.0347,77.137,0.353,49
+59,Manic,7,4whxuYrgqxYoqqp41iIw66,You should be sad - Acoustic,spotify:track:4whxuYrgqxYoqqp41iIw66,0.831,0.7,0.527,0.0,0.0801,-4.6,0.0291,107.967,0.485,49
+60,Manic,8,2Jg4Z3O9A1UN8VvlWK7Ttj,Alanis' Interlude - Stripped,spotify:track:2Jg4Z3O9A1UN8VvlWK7Ttj,0.882,0.65,0.386,0.0,0.116,-4.99,0.0287,97.924,0.369,45
+61,Manic,9,7EwVFWY45ClBKUV93a76db,Without Me - Stripped,spotify:track:7EwVFWY45ClBKUV93a76db,0.888,0.666,0.482,1.35e-06,0.105,-3.813,0.0325,129.758,0.181,51
+62,Manic,10,1DSHAYYPzPh5JusGnEN3Pm,Graveyard - Stripped,spotify:track:1DSHAYYPzPh5JusGnEN3Pm,0.801,0.476,0.44,0.00035,0.0955,-6.031,0.032,163.717,0.391,45
+63,Manic,11,1PDewLLRWmPjQQvml0fBMV,3am - Stripped,spotify:track:1PDewLLRWmPjQQvml0fBMV,0.776,0.687,0.743,0.000145,0.139,-2.694,0.0366,95.171,0.504,53
+64,Manic,1,55ZcA6PazdlXjE1jO5GrzJ,Ashley,spotify:track:55ZcA6PazdlXjE1jO5GrzJ,0.137,0.663,0.531,0.0,0.146,-6.339,0.0827,125.014,0.366,59
+65,Manic,2,66c7n8ZXmYQQeXyNVfiArc,clementine,spotify:track:66c7n8ZXmYQQeXyNVfiArc,0.885,0.533,0.437,0.0,0.106,-7.659,0.162,143.263,0.48,54
+66,Manic,3,2ufmtcIFdFpuUYBPXK5f67,Graveyard,spotify:track:2ufmtcIFdFpuUYBPXK5f67,0.231,0.667,0.583,4.48e-05,0.181,-5.127,0.0747,92.043,0.187,74
+67,Manic,4,7lidXGPXPYLNThITAOTlkK,You should be sad,spotify:track:7lidXGPXPYLNThITAOTlkK,0.143,0.591,0.585,0.0,0.109,-6.35,0.0277,110.94,0.324,79
+68,Manic,5,6BORJ0ZazxMBpM3cWg79Id,Forever ... (is a long time),spotify:track:6BORJ0ZazxMBpM3cWg79Id,0.746,0.509,0.265,1.08e-06,0.198,-9.716,0.0344,70.028,0.291,56
+69,Manic,6,2sOOXgEGB7nhKO8mmc1GhI,Dominic’s Interlude,spotify:track:2sOOXgEGB7nhKO8mmc1GhI,0.784,0.406,0.368,0.0,0.354,-6.31,0.0296,157.885,0.707,55
+70,Manic,7,35FjZytt5TukIgJD86UybL,I HATE EVERYBODY,spotify:track:35FjZytt5TukIgJD86UybL,0.137,0.679,0.197,0.0,0.0887,-7.078,0.0331,79.504,0.559,58
+71,Manic,8,1OfLNb6dQ9dra1B58iT9Ex,3am,spotify:track:1OfLNb6dQ9dra1B58iT9Ex,0.00906,0.385,0.871,0.0,0.579,-4.604,0.0795,189.76,0.538,63
+72,Manic,9,6FZDfxM3a3UCqtzo5pxSLZ,Without Me,spotify:track:6FZDfxM3a3UCqtzo5pxSLZ,0.297,0.752,0.488,9.11e-06,0.0936,-7.05,0.0705,136.041,0.533,76
+73,Manic,10,42SOtYBdnfj9zEdZSlAq5k,Finally // beautiful stranger,spotify:track:42SOtYBdnfj9zEdZSlAq5k,0.051,0.626,0.55,0.0,0.118,-5.105,0.029,133.976,0.123,60
+74,Manic,11,6ZmwwHYtun94UOdFWWgdif,Alanis’ Interlude,spotify:track:6ZmwwHYtun94UOdFWWgdif,0.00947,0.705,0.89,0.0,0.14,-4.356,0.0555,94.013,0.45,55
+75,Manic,12,1H3Okhf16ttAICZF7zgDko,killing boys,spotify:track:1H3Okhf16ttAICZF7zgDko,0.243,0.685,0.898,0.000103,0.377,-5.796,0.186,139.993,0.684,57
+76,Manic,13,1ZoQVu9XBssJBdeKMgF2eV,SUGA's Interlude,spotify:track:1ZoQVu9XBssJBdeKMgF2eV,0.0864,0.55,0.732,0.0,0.0425,-6.88,0.105,153.836,0.246,57
+77,Manic,14,3jgHKbpswygyOMipFz06RQ,More,spotify:track:3jgHKbpswygyOMipFz06RQ,0.635,0.399,0.224,0.0,0.0836,-11.19,0.119,170.795,0.172,57
+78,Manic,15,2Mfv5HaqnI18Q9JRv9hqnn,Still Learning,spotify:track:2Mfv5HaqnI18Q9JRv9hqnn,0.0396,0.708,0.661,0.000244,0.113,-6.543,0.0546,102.046,0.317,62
+79,Manic,16,1ed6Wdjk7gkxI2lIYjAoJ2,929,spotify:track:1ed6Wdjk7gkxI2lIYjAoJ2,0.935,0.642,0.317,0.0,0.207,-9.325,0.155,150.152,0.617,57
+80,hopeless fountain kingdom (Deluxe),1,7gBHiMoHNnPCqt1YR7sM2P,The Prologue,spotify:track:7gBHiMoHNnPCqt1YR7sM2P,0.525,0.495,0.463,1.48e-05,0.102,-10.54,0.0374,38.017,0.137,43
+81,hopeless fountain kingdom (Deluxe),2,5EBvHC0SGFJDenBJafqOX4,100 Letters,spotify:track:5EBvHC0SGFJDenBJafqOX4,0.155,0.745,0.713,0.0,0.0653,-5.129,0.0896,110.052,0.376,53
+82,hopeless fountain kingdom (Deluxe),3,2WQn7Yvs728KZmmY6tgWqH,Eyes Closed,spotify:track:2WQn7Yvs728KZmmY6tgWqH,0.0179,0.581,0.684,1.93e-05,0.0849,-4.962,0.0429,129.966,0.0397,60
+83,hopeless fountain kingdom (Deluxe),4,2zRiYzBzeabQQ16BK3c6jk,Heaven In Hiding,spotify:track:2zRiYzBzeabQQ16BK3c6jk,0.0957,0.55,0.874,0.0,0.0618,-3.954,0.136,117.926,0.476,57
+84,hopeless fountain kingdom (Deluxe),5,2Te14aSrBgFj1CE2sBBVMX,Alone,spotify:track:2Te14aSrBgFj1CE2sBBVMX,0.0184,0.602,0.724,0.0,0.606,-3.469,0.0352,100.064,0.451,56
+85,hopeless fountain kingdom (Deluxe),6,7i2DJ88J7jQ8K7zqFX2fW8,Now Or Never,spotify:track:7i2DJ88J7jQ8K7zqFX2fW8,0.107,0.67,0.585,1.11e-06,0.131,-4.861,0.0354,110.03,0.447,67
+86,hopeless fountain kingdom (Deluxe),7,44n97yHySt0Z9rqPaXgjCK,Sorry,spotify:track:44n97yHySt0Z9rqPaXgjCK,0.913,0.513,0.25,0.0,0.117,-9.376,0.0367,74.103,0.351,76
+87,hopeless fountain kingdom (Deluxe),8,6Ck8Lq4srTWQP1PXZ9P8aZ,Good Mourning,spotify:track:6Ck8Lq4srTWQP1PXZ9P8aZ,0.713,0.629,0.53,0.0274,0.412,-9.943,0.0556,99.806,0.78,45
+88,hopeless fountain kingdom (Deluxe),9,3BRO4QR9ZDj9Ae3VtbjeUr,Lie,spotify:track:3BRO4QR9ZDj9Ae3VtbjeUr,0.131,0.361,0.468,9.78e-06,0.175,-5.276,0.0343,150.572,0.04,55
+89,hopeless fountain kingdom (Deluxe),10,5ln5yQdUywVbf8HhFsOcd6,Walls Could Talk,spotify:track:5ln5yQdUywVbf8HhFsOcd6,0.128,0.626,0.423,0.0,0.18,-6.035,0.0513,95.162,0.571,73
+90,hopeless fountain kingdom (Deluxe),11,7y9iMe8SOB6z3NoHE2OfXl,Bad At Love,spotify:track:7y9iMe8SOB6z3NoHE2OfXl,0.0604,0.675,0.751,0.0,0.0893,-3.539,0.0296,118.384,0.612,73
+91,hopeless fountain kingdom (Deluxe),12,7hHTbI9DRg8u9oJ92RQJkw,Don’t Play,spotify:track:7hHTbI9DRg8u9oJ92RQJkw,0.0566,0.721,0.709,3.95e-05,0.0686,-7.939,0.0486,99.961,0.341,53
+92,hopeless fountain kingdom (Deluxe),13,11EDhDAVDtGPoSar6ootYA,Strangers,spotify:track:11EDhDAVDtGPoSar6ootYA,0.01,0.69,0.784,4.08e-05,0.22,-4.724,0.056,109.969,0.284,63
+93,hopeless fountain kingdom (Deluxe),14,4vTsOYAocjaslUONkx2YS3,Angel On Fire,spotify:track:4vTsOYAocjaslUONkx2YS3,0.254,0.505,0.697,0.0,0.158,-5.479,0.0406,96.938,0.208,51
+94,hopeless fountain kingdom (Deluxe),15,2bDXmdP23tCK9uj8e2o3ya,Devil In Me,spotify:track:2bDXmdP23tCK9uj8e2o3ya,0.0634,0.581,0.71,0.0,0.0732,-5.245,0.0348,106.04,0.188,57
+95,hopeless fountain kingdom (Deluxe),16,0FV5UJ3aGray3oeNBpJ8oc,Hopeless,spotify:track:0FV5UJ3aGray3oeNBpJ8oc,0.617,0.444,0.47,0.0,0.0861,-6.897,0.0611,89.945,0.164,51
+167,BADLANDS (Deluxe),1,16w8ZGVSjI4TlTLV8VimBY,Castle,spotify:track:16w8ZGVSjI4TlTLV8VimBY,0.25,0.626,0.571,0.0,0.0946,-7.461,0.0327,129.959,0.164,68
+168,BADLANDS (Deluxe),2,4U38hORPx8SsUAXGumsUYN,Hold Me Down,spotify:track:4U38hORPx8SsUAXGumsUYN,0.279,0.677,0.744,0.0,0.119,-4.512,0.0882,145.928,0.531,60
+170,BADLANDS (Deluxe),4,3ek4HgBlmvkTWgfT5sTSe9,Drive,spotify:track:3ek4HgBlmvkTWgfT5sTSe9,0.239,0.571,0.585,0.00016,0.133,-8.392,0.0494,113.973,0.291,58
+171,BADLANDS (Deluxe),5,5Dg2h1wsm7ZijCo0yLmbvR,Hurricane,spotify:track:5Dg2h1wsm7ZijCo0yLmbvR,0.00823,0.586,0.83,0.0028,0.348,-5.375,0.0416,120.017,0.486,60
+172,BADLANDS (Deluxe),6,6s8PRmROPJHlqZmu9Bbviz,Roman Holiday,spotify:track:6s8PRmROPJHlqZmu9Bbviz,0.0322,0.431,0.836,2.34e-05,0.105,-4.428,0.0395,74.473,0.75,55
+173,BADLANDS (Deluxe),7,5dcYoYFAXh0f0qI05AoufB,Ghost,spotify:track:5dcYoYFAXh0f0qI05AoufB,0.0529,0.57,0.606,0.000727,0.134,-8.085,0.129,95.038,0.212,61
+175,BADLANDS (Deluxe),9,2FBkPf8hS5Jam6YEnV8DBF,Colors pt. II,spotify:track:2FBkPf8hS5Jam6YEnV8DBF,0.0179,0.585,0.634,0.633,0.146,-8.364,0.0507,94.969,0.453,50
+176,BADLANDS (Deluxe),10,6zQq3TrWnilO8SR1fgvTeD,Strange Love,spotify:track:6zQq3TrWnilO8SR1fgvTeD,0.00212,0.605,0.849,0.000372,0.192,-4.761,0.043,89.993,0.599,57
+177,BADLANDS (Deluxe),11,4lKXjLzAV0Nxwln8MxHVtQ,Coming Down,spotify:track:4lKXjLzAV0Nxwln8MxHVtQ,0.436,0.625,0.753,0.00273,0.367,-5.983,0.166,88.956,0.539,55
+178,BADLANDS (Deluxe),12,1r1WtSrPbAOYHE7zwq4eqK,Haunting,spotify:track:1r1WtSrPbAOYHE7zwq4eqK,0.015,0.461,0.696,0.000491,0.21,-5.752,0.0486,180.006,0.311,57
+179,BADLANDS (Deluxe),13,2IO7yf562c1zLzpanal1DT,Gasoline,spotify:track:2IO7yf562c1zLzpanal1DT,0.223,0.731,0.58,0.0,0.129,-7.328,0.0399,119.997,0.319,72
+180,BADLANDS (Deluxe),14,3SKzTIl9mW0DadTys9SFo3,Control,spotify:track:3SKzTIl9mW0DadTys9SFo3,0.399,0.549,0.675,0.0,0.181,-5.637,0.0332,119.898,0.206,71
+181,BADLANDS (Deluxe),15,5x2XIAdvFxWCwIOMNkbWUj,Young God,spotify:track:5x2XIAdvFxWCwIOMNkbWUj,0.324,0.449,0.599,4.09e-06,0.114,-6.509,0.0405,119.868,0.198,60
+182,BADLANDS (Deluxe),16,36dfGEKTGHxLmdNIYr0VTi,I Walk The Line,spotify:track:36dfGEKTGHxLmdNIYr0VTi,0.0556,0.5,0.633,0.0,0.311,-6.251,0.0414,119.901,0.195,53
+201,BADLANDS,3,6Xs7OKt6i0Ddq8B4M5Dgvr,New Americana,spotify:track:6Xs7OKt6i0Ddq8B4M5Dgvr,0.0113,0.339,0.707,0.0,0.337,-5.121,0.0428,173.993,0.359,67
+204,BADLANDS,6,1TnUURhehaoMWKAqQtirm6,Colors,spotify:track:1TnUURhehaoMWKAqQtirm6,0.0534,0.512,0.812,0.0,0.092,-4.809,0.0617,100.02,0.521,69

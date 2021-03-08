@@ -1,17 +1,16 @@
 from __future__ import print_function
-
-import threading
-
 from bedtime import computer_sleep
 from diction import translate
 from news import speak_news, getNewsUrl
 from simple_tracker import scrape_amazon
 from youtube import youtube
-from threading import Thread, Event
+from threading import Event
 from datetime import datetime
 from sys import platform
 from pycaw.pycaw import AudioUtilities, ISimpleAudioVolume
 from kill_threads import StoppableThread
+from decimal import *
+
 import subprocess
 import _thread
 import json
@@ -97,15 +96,6 @@ def send_email(_to, _content):
     server.close()
 
 
-def cpu():
-    usage = str(psutil.cpu_percent())
-    speak("CPU is at" + usage + "%")
-
-    battery = psutil.sensors_battery()
-    speak("battery is at")
-    speak(battery.percent + "%")
-
-
 def scraper():
     speak("Let me scan amazon on what prices they are offering for an iPhone 12. Just a sec...")
     scrape_amazon()
@@ -122,16 +112,6 @@ def scraper():
         speak("I'll handle the payment for you. Expect a new iPhone 12 probably 2 days from now.")
     if 'no' in query_:
         speak("Ok i'll skip it. You do need a new phone sir. Just a tip.")
-
-
-def joke():
-    for i in range(2):
-        speak(pyjokes.get_jokes()[i])
-
-
-def screenshot():
-    img = pyautogui.screenshot()
-    img.save('path of folder you want to save/screenshot.png')
 
 
 def backup(name):
@@ -161,22 +141,41 @@ def change_volume(val):
             break
 
 
-def spotify_play():
+def spotify_rand():
     change_volume(1)
-    proc = subprocess.Popen(["spotify", "play", "blood in the cut awoltalk"], stdout=subprocess.PIPE, shell=True)
-    (out, err) = proc.communicate()
-    album, all_artists, name = clean_song_string(out)
+    os.system("@echo off && @echo Loading... && cd scripts/bat && rand-spotify.bat")
     time.sleep(10)
-    if err is not None:
-        change_volume(0.3)
-        speak(f'Ummm, Vicz, I ran into an error trying to open spotify. {err}')
-        change_volume(1)
+    speak('I generated a random list of songs on spotify and added them to the queue.')
+    while countdown_thread.stopped() is not True:
+        time.sleep(60)
 
-    if out == "":
-        speak("Vicz, spotify isn't running on any of your devices. I'll just play a random song")
-    else:
-        print(all_artists, name, album, err)
-        speak(f'I am currently playing, {name} by {all_artists}. Album is {album}')
+
+def spotify_play(song):
+    change_volume(1)
+
+    for i in range(10):
+        proc = subprocess.Popen(["spotify", "play", song], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
+        (out, err) = proc.communicate()
+        album, all_artists, name = clean_song_string(out)
+        time.sleep(10)
+        change_volume(0.5)
+        time.sleep(1)
+        if err:
+            change_volume(0.2)
+            speak(f'Ummm, Vicz, I ran into an error trying to open spotify. {err}')
+            change_volume(1)
+            time.sleep(2)
+        else:
+            print(all_artists, name, album, err)
+            change_volume(0.2)
+            speak(f'I am currently playing, {name} by {all_artists}. Album is {album}')
+            change_volume(1)
+            break
+
+    while countdown_thread.stopped() is not True:
+        time.sleep(60)
+
+    exit(1)
 
 
 def clean_song_string(out):
@@ -188,22 +187,28 @@ def clean_song_string(out):
     divider = song.find(" - ")
     artists = song[:divider]
     artists = artists.split(',')
-    all_artists = ""
-    for x in artists:
-        if x == artists[len(artists) - 1]:
-            all_artists += "and "
-            all_artists += x
-        elif x == artists[len(artists) - 2]:
-            all_artists += x
-            all_artists += " "
-        else:
-            all_artists += x
-            all_artists += ", "
+    if len(artists) > 1:
+        all_artists = ""
+        for x in artists:
+            if x == artists[len(artists) - 1]:
+                all_artists += "and "
+                all_artists += x
+            elif x == artists[len(artists) - 2]:
+                all_artists += x
+                all_artists += " "
+            else:
+                all_artists += x
+                all_artists += ", "
+    else:
+        all_artists = artists
     album = song[divider + 2:]
     return album, all_artists, name
 
 
 def execute_jarvis():
+    if countdown_thread.stopped():
+        time.sleep(10)
+        exit(1)
     if platform == "win32":
         chrome_path = 'C:\Program Files\Google\Chrome\Application\chrome.exe'
     else:
@@ -217,6 +222,7 @@ def execute_jarvis():
 
     while True:
         if countdown_thread.stopped():
+            time.sleep(10)
             exit(1)
 
         query = takeCommand().lower()
@@ -297,12 +303,20 @@ def execute_jarvis():
                 webbrowser.get('chrome').open_new_tab('https://www.patreon.com/RicoPresents/posts')
 
             elif 'music' in query:
-                speak("Ok, let me shuffle through spotify sir.")
+                speak("Ok sir.")
                 spotify_open_thread = StoppableThread(target=spotify_open)
-                spotify_play_thread = StoppableThread(target=spotify_play)
                 spotify_open_thread.start()
                 speak("Hope you enjoy.")
                 time.sleep(15)
+                index = query.find("music")
+                song = query[index + 5:]
+                print(song)
+                if song != "":
+                    speak(f'Let me search for {song} on spotify')
+                    spotify_play_thread = StoppableThread(target=spotify_play(song=song))
+                else:
+                    spotify_play_thread = StoppableThread(target=spotify_rand)
+
                 spotify_play_thread.start()
 
             elif 'turn up the volume' in query:
@@ -430,22 +444,28 @@ def execute_jarvis():
 def time_ends():
     final_hour = 22
     final_minute = 30
-    final_second = 59
+    final_second = 5
     current = datetime.now().time()
     hour = current.hour
     minute = current.minute
     second = current.second
     final_time = 0
+    total_seconds = (((final_hour*60)+final_minute)*60)+final_second
+    current_seconds = (((hour*60)+minute)*60)+second
 
-    if final_hour > hour:
-        cur_hour = final_hour - hour
-        cur_minute = final_minute - minute
-        cur_second = final_second - second
-
-        if cur_minute < 0:
-            cur_minute = final_minute + cur_minute
-        print("time left: ", cur_hour.__str__() + ":" + cur_minute.__str__() + ":" + cur_second.__str__())
-        final_time = (cur_hour * 60 * 60) + (cur_minute * 60) + cur_second
+    if current_seconds < total_seconds:
+        left = total_seconds - current_seconds
+        final_time = left
+        hour = int(left/(60*60))
+        getcontext().prec = 6
+        minute = (Decimal(left) / (Decimal(60) * (Decimal(60)))) - hour
+        minute = Decimal(minute) * Decimal(60)
+        second = minute - int(minute)
+        minute = int(minute)
+        second = int(second*60)
+        print("time left: ", hour.__str__() + ":" + minute.__str__() + ":" + second.__str__())
+    else:
+        print("my day is done Vicz!")
 
     return final_time
 
@@ -465,4 +485,5 @@ def countdown():
 if __name__ == '__main__':
     countdown_thread = StoppableThread(target=countdown)
     countdown_thread.start()
+    time.sleep(1)
     execute_jarvis()
