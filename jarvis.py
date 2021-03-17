@@ -145,7 +145,25 @@ def spotify_rand():
     change_volume(1)
     os.system("@echo off && @echo Loading... && cd scripts/bat && rand-spotify.bat")
     time.sleep(10)
+    change_volume(0.9)
+    time.sleep(0.1)
+    change_volume(0.7)
+    time.sleep(0.1)
+    change_volume(0.5)
+    time.sleep(0.1)
+    change_volume(0.3)
+    time.sleep(0.1)
+    change_volume(0.1)
     speak('I generated a random list of songs on spotify and added them to the queue.')
+    change_volume(0.2)
+    time.sleep(0.1)
+    change_volume(0.4)
+    time.sleep(0.1)
+    change_volume(0.6)
+    time.sleep(0.1)
+    change_volume(0.8)
+    time.sleep(0.1)
+    change_volume(1)
     while countdown_thread.stopped() is not True:
         time.sleep(60)
 
@@ -157,18 +175,48 @@ def spotify_play(song):
         proc = subprocess.Popen(["spotify", "play", song], stdout=subprocess.PIPE, stderr=subprocess.PIPE, shell=True)
         (out, err) = proc.communicate()
         album, all_artists, name = clean_song_string(out)
-        time.sleep(10)
-        change_volume(0.5)
-        time.sleep(1)
+        time.sleep(15)
         if err:
-            change_volume(0.2)
+            change_volume(0.9)
+            time.sleep(0.1)
+            change_volume(0.7)
+            time.sleep(0.1)
+            change_volume(0.5)
+            time.sleep(0.1)
+            change_volume(0.3)
+            time.sleep(0.1)
+            change_volume(0.1)
             speak(f'Ummm, Vicz, I ran into an error trying to open spotify. {err}')
+            change_volume(0.2)
+            time.sleep(0.1)
+            change_volume(0.4)
+            time.sleep(0.1)
+            change_volume(0.6)
+            time.sleep(0.1)
+            change_volume(0.8)
+            time.sleep(0.1)
             change_volume(1)
             time.sleep(2)
         else:
             print(all_artists, name, album, err)
-            change_volume(0.2)
+            change_volume(0.9)
+            time.sleep(0.1)
+            change_volume(0.7)
+            time.sleep(0.1)
+            change_volume(0.5)
+            time.sleep(0.1)
+            change_volume(0.3)
+            time.sleep(0.1)
+            change_volume(0.1)
             speak(f'I am currently playing, {name} by {all_artists}. Album is {album}')
+            change_volume(0.2)
+            time.sleep(0.1)
+            change_volume(0.4)
+            time.sleep(0.1)
+            change_volume(0.6)
+            time.sleep(0.1)
+            change_volume(0.8)
+            time.sleep(0.1)
             change_volume(1)
             break
 
@@ -218,17 +266,20 @@ def execute_jarvis():
     webbrowser.register(
         'chrome', None, webbrowser.BackgroundBrowser(chrome_path))
     wish_me()
-    print('Listening...')
+    animation = "|/-\\"
+    idx = 0
 
     while True:
         if countdown_thread.stopped():
             time.sleep(10)
             exit(1)
 
+        print(animation[idx % len(animation)], end='')
+        idx += 1
         query = takeCommand().lower()
 
-        if '10995' in query:
-            print(f'said: {query}\n')
+        if '223' in query:
+            print(f'\nsaid: {query}\n')
 
             if 'blender' in query:
                 speak('Sure, setting up your desired workspace.')
@@ -242,7 +293,7 @@ def execute_jarvis():
                 speak("Umm, Vicz, the upload source code wasn't compiled before hand.")
                 time.sleep(5)
                 speak("Ok, I'll compile the maven project and package it to a windows executable file.")
-                time.sleep(15)
+                time.sleep(25)
                 speak("Your workspace is all setup sir")
 
             elif 'wikipedia' in query:
@@ -439,6 +490,8 @@ def execute_jarvis():
 
             elif 'i want you to sleep' in query:
                 sys.exit()
+        time.sleep(0.3)
+        print(end='\r')
 
 
 def time_ends():
@@ -450,19 +503,19 @@ def time_ends():
     minute = current.minute
     second = current.second
     final_time = 0
-    total_seconds = (((final_hour*60)+final_minute)*60)+final_second
-    current_seconds = (((hour*60)+minute)*60)+second
+    total_seconds = (((final_hour * 60) + final_minute) * 60) + final_second
+    current_seconds = (((hour * 60) + minute) * 60) + second
 
     if current_seconds < total_seconds:
         left = total_seconds - current_seconds
         final_time = left
-        hour = int(left/(60*60))
+        hour = int(left / (60 * 60))
         getcontext().prec = 6
         minute = (Decimal(left) / (Decimal(60) * (Decimal(60)))) - hour
         minute = Decimal(minute) * Decimal(60)
         second = minute - int(minute)
         minute = int(minute)
-        second = int(second*60)
+        second = int(second * 60)
         print("time left: ", hour.__str__() + ":" + minute.__str__() + ":" + second.__str__())
     else:
         print("my day is done Vicz!")

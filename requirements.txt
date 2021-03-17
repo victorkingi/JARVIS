@@ -6,14 +6,11 @@ pyttsx3~=2.90
 requests~=2.25.1
 wikipedia==1.4.0
 loc==0.0.2
-
 psutil~=5.8.0
 pyjokes~=0.6.0
 selenium==3.141.0
-
 pycountry~=20.7.3
 pycaw~=20181226
 spotipy~=2.17.1
 numpy~=1.19.2
-
 pandas~=1.2.3
